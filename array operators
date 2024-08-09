@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Example</title>
+</head>
+<body>
+<script>
+        // Creating an array
+        var numbers = [1, 2, 3, 4, 5];
+// Adding elements
+        numbers.push(6);
+// Removing elements
+        numbers.pop();
+// Iterating over the array
+        numbers.forEach(function(num) {
+            console.log(num);
+        });
+// Mapping to a new array
+        var squared = numbers.map(function(num) {
+            return num * num;
+        });
+        console.log(squared);
+
+        // Filtering the array
+        var evenNumbers = numbers.filter(function(num) {
+            return num % 2 === 0;
+        });
+        console.log(evenNumbers);
+    </script>
+
+</body>
+</html>
